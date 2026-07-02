@@ -1,0 +1,95 @@
+{
+  "@@locale": "en",
+  "appTitle": "Flutter Freedom",
+  "languageToggle": "فارسی",
+  "currentOS": "Current OS",
+  "aboutDescription": "Flutter Freedom is created by Masoud Ghasemi to overcome the existing limitations for Flutter developers in Iran.\nThis app is released as OpenSource under GPL v3.0 license. Any copying and usage of it is only allowed on the condition of sharing changes for free.",
+  "telegramChannel": "Telegram Channel",
+  "githubRepo": "GitHub Repo",
+  "sectionDownloadLinks": "Download Links",
+  "sectionMirrorSetup": "Mirror Setup",
+  "sectionHelpfulLinks": "Helpful Links",
+  "downloadFlutterSdk": "Download Flutter SDK",
+  "downloadAndroidSdk": "Download Android SDK",
+  "stepEnvVars": "Step 1 — Environment Variables",
+  "stepGradleInit": "Step 2 — Gradle Init Script (Maven Mirror)",
+  "stepGradleWrapper": "Step 3 — Gradle Wrapper Properties",
+  "stepEnvVarsDesc": "Sets PUB_HOSTED_URL and FLUTTER_STORAGE_BASE_URL system environment variables.\n(Required for all platforms, including Android)\nNote: You may need to restart your IDE or terminal after applying this step for the changes to take effect.\nOnly do once on your machine, not per project.",
+  "stepGradleInitDesc": "Creates mirror.init.gradle.kts inside .gradle/init.d to redirect Maven repositories.\n(Only needed for Android development)\nRequires Gradle 7.0+\nWorks for all Gradle-based projects, not just Flutter.\nCan be used alongside Step 3 or on its own.\nOnly do once on your machine, not per project.",
+  "stepGradleWrapperDesc": "Updates gradle-wrapper.properties in your Flutter project to use a mirror for Gradle downloads.\nNeeds to be done per Flutter project.\nOnly affects Gradle distribution downloads, not dependencies.\nOn linux MUST have zenity installed  (sudo apt install zenity) or kdialog on KDE (sudo apt install kdialog)",
+  "selectMirror": "Select Mirror",
+  "applyMirror": "Apply",
+  "revertMirror": "Revert",
+  "autoSetup": "Auto Setup (Steps 1 & 2)",
+  "autoSetupDesc": "Automatically applies Myket mirror for environment variables and Gradle init script.",
+  "selectProjectFolder": "Select Flutter Project Folder",
+  "mirrorSetupDesc": "For developing Android apps with Flutter, you need to do steps 2 and 3, otherwise step 1 is sufficient for Desktop and Web projects.",
+  "folderSelected": "Folder: {path}",
+  "@folderSelected": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "noFolderSelected": "No folder selected",
+  "statusApplied": "Applied",
+  "statusNotApplied": "Not Applied",
+  "successEnvSet": "Environment variables set successfully.",
+  "successEnvReverted": "Environment variables reverted.",
+  "successFileCreated": "Gradle init file created.",
+  "successFileChanged": "Gradle init file updated.",
+  "successFileRemoved": "Gradle init file removed.",
+  "successWrapperUpdated": "gradle-wrapper.properties updated.",
+  "successWrapperReverted": "gradle-wrapper.properties reverted to official source.",
+  "errorUserFolderNotFound": "User home folder not found.",
+  "errorFileNotExist": "File does not exist.",
+  "errorFileAlreadyCorrect": "File is already set to this mirror.",
+  "errorWrapperNotFound": "gradle-wrapper.properties not found in the selected folder.",
+  "errorWrapperReadFailed": "Failed to read gradle-wrapper.properties.",
+  "errorGeneric": "An error occurred: {message}",
+  "@errorGeneric": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "errorNoFolderSelected": "Please select a Flutter project folder first.",
+  "errorAdminRequired": "This operation may require administrator privileges on Windows.",
+  "errorAutoSetupFailed": "Auto setup failed: {message}",
+  "@errorAutoSetupFailed": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "autoSetupSuccess": "Auto setup completed successfully.",
+  "mirrorMyket": "Myket",
+  "mirrorRunflare": "Runflare",
+  "mirrorChinese": "Chinese",
+  "mirrorTaraz": "Taraz",
+  "mirrorDevNeeds": "DevNeeds",
+  "helpfulLinkPubMyket": "pub.dev Mirror (Myket)",
+  "helpfulLinkPubTaraz": "pub.dev Mirror (Taraz)",
+  "helpfulLinkMavenMyket": "Myket Mirrors Docs",
+  "helpfulLinkRunflareDocs": "Runflare Mirrors Docs",
+  "helpfulLinkFlutterGems": "Flutter Gems",
+  "helpfulLinkUndraw": "unDraw Illustrations",
+  "helpfulLinkSvgRepo": "SVG Repo",
+  "helpfulLinkAwesomeFlutter": "Awesome Flutter (GitHub)",
+  "helpfulLinkFlutterAwesome": "Flutter Awesome",
+  "currentValue": "Current: {value}",
+  "@currentValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "notSet": "Not set",
+  "confirmRevert": "Are you sure you want to revert this step?",
+  "yes": "Yes",
+  "cancel": "Cancel"
+}
