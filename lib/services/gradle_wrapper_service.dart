@@ -92,7 +92,7 @@ class GradleWrapperService {
         final currentUrl = line.substring('distributionUrl='.length).trim();
         version = extractVersion(currentUrl);
         if (version == null) throw Exception('wrapperReadFailed');
-        newLines.add('distributionUrl=${_officialBase}${version}.zip');
+        newLines.add('distributionUrl=$_officialBase$version.zip');
       } else {
         newLines.add(line);
       }

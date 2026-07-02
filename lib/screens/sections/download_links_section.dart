@@ -57,9 +57,7 @@ class _DownloadButton extends StatelessWidget {
         elevation: 0,
       ),
       icon: FaIcon(icon, size: 20),
-      label: Text(
-        label,
-      ),
+      label: Text(label),
       onPressed: () => launchUrl(Uri.parse(url)),
     );
   }

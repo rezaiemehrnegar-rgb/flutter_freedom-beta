@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:file_picker/file_picker.dart';
@@ -6,7 +8,6 @@ import 'package:flutter_freedom/generated/app_localizations.dart';
 import '../../providers/app_provider.dart';
 import '../../constants/mirrors.dart';
 
-//TODO fix folder picker on linux
 class MirrorSetupSection extends StatelessWidget {
   const MirrorSetupSection({super.key});
 
@@ -378,7 +379,7 @@ class _GradleWrapperStep extends StatelessWidget {
               icon: const Icon(Icons.folder_open_rounded, size: 18),
               label: Text(l10n.selectProjectFolder),
               onPressed: () async {
-                final result = await FilePicker.platform.getDirectoryPath();
+                final result = await FilePicker.getDirectoryPath();
                 if (result != null) provider.setProjectPath(result);
               },
             ),

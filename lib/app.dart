@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_freedom/generated/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
-
 import 'providers/app_provider.dart';
 import 'screens/home_screen.dart';
 

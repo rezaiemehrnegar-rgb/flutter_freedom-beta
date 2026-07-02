@@ -247,8 +247,9 @@ class AppProvider extends ChangeNotifier {
   String _mapException(String raw) {
     if (raw.contains('wrapperNotFound')) return 'errorWrapperNotFound';
     if (raw.contains('wrapperReadFailed')) return 'errorWrapperReadFailed';
-    if (raw.contains('userHomeFolderNotFound'))
+    if (raw.contains('userHomeFolderNotFound')) {
       return 'errorUserFolderNotFound';
+    }
     return raw;
   }
 }
