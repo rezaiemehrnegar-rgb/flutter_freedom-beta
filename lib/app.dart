@@ -75,28 +75,25 @@ class FlutterFreedomApp extends StatelessWidget {
         onSurface: const Color(0xFFE0E0E0),
       ),
       scaffoldBackgroundColor: const Color(0xFF0F0F1A),
-      textTheme: applyFont(base.textTheme.copyWith(
-        titleLarge: const TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.w700,
-          color: Color(0xFFE0E0E0),
+      textTheme: applyFont(
+        base.textTheme.copyWith(
+          titleLarge: const TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w700,
+            color: Color(0xFFE0E0E0),
+          ),
+          titleMedium: const TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+            color: Color(0xFFE0E0E0),
+          ),
+          bodyMedium: const TextStyle(fontSize: 14, color: Color(0xFFB0B0C0)),
         ),
-        titleMedium: const TextStyle(
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
-          color: Color(0xFFE0E0E0),
-        ),
-        bodyMedium: const TextStyle(
-          fontSize: 14,
-          color: Color(0xFFB0B0C0),
-        ),
-      )),
+      ),
       cardTheme: CardThemeData(
         color: const Color(0xFF1E1E30),
         elevation: 4,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -148,9 +145,7 @@ class FlutterFreedomApp extends StatelessWidget {
           decoration: TextDecoration.none,
           decorationColor: const Color(0xFFE6E0E9),
         ),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       ),
       dividerTheme: const DividerThemeData(
         color: Color(0xFF2A2A40),
